@@ -65,3 +65,18 @@
 .link{
   color: blue
 }
+.blacklink:hover{
+  color: white;
+  background: black;
+
+}
+
+.blacklink:active{
+  color: black;
+  background: white;
+}
+
+
+.blacklink{
+  color: black
+}
