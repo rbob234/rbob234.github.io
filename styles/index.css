@@ -49,3 +49,16 @@
                       .info-link:hover{
                         color:#fff;
                         background-color:#000}
+
+.link:hover{
+  color: white;
+  background: blue;
+
+}
+
+.link:active{
+  color: blue;
+  background: white;
+}
+
+
