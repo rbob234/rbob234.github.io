@@ -43,6 +43,7 @@
       <section id="post-content-container">
         
           <div class="definition">
+<h1 class="unnumbered" id="basic-results">Basic Results</h1>
 <div class="definition">
 <p><strong>Definition 1</strong>. <em>The arithmetic derivative, <span
 class="math inline"><em>D</em></span>, is defined recursively in the
@@ -64,6 +65,75 @@ if one sees the numbers <span class="math inline">0</span> &amp; <span
 class="math inline">1</span> as the "constant" functions, prime numbers
 as "lines" with slope <span class="math inline">1</span> and if one
 required the arithmetic derivative to satisfy the Lebiniz rule.</p>
+<p>Since this definition doesn’t allow one to directly compute the
+derivative of a number quickly, the following lemma shall help us
+greatly.</p>
+<div class="lemma">
+<p><strong>Lemma 1</strong>. <em>If <span class="math inline">$x =
+\prod_{i =1 }^n m_i$</span> then <span class="math inline">$D(x) =
+x\sum_{i = 1}^n \frac{D(m_i)}{m_i}$</span></em></p>
+</div>
+<p><em>Proof:</em></p>
+<p>We shall proceed by induction on the amount of elements in the
+product expansion of <span class="math inline"><em>x</em></span>. If
+<span class="math inline"><em>n</em> = 1</span> then <span
+class="math inline"><em>x</em> = <em>m</em><sub>1</sub></span> and thus
+<span class="math inline">$x\sum_{i = 1}^n \frac{D(m_i)}{m_i} =
+(m_1)\frac{D(m_1)}{m_1} = D(m_1) = D(x)$</span>.</p>
+<p>Now let’s assume that for any <span
+class="math inline"><em>x</em></span> with <span
+class="math inline"><em>n</em></span> factors in its product expansion
+the formula <span class="math inline">$D(x) = x\sum_{i = 1}^n
+\frac{D(m_i)}{m_i}$</span> applies. Let <span
+class="math inline"><em>x</em>′</span> be equal to <span
+class="math inline"><em>x</em><em>m</em><sub><em>n</em> + 1</sub></span>
+and thus <span
+class="math inline"><em>D</em>(<em>x</em>′) = <em>D</em>(<em>x</em>)<em>m</em><sub><em>n</em> + 1</sub> + <em>x</em><em>D</em>(<em>m</em><sub><em>n</em> + 1</sub>)</span>.
+We can rewrite <span
+class="math inline"><em>D</em>(<em>x</em>)<em>m</em><sub><em>n</em> + 1</sub> + <em>x</em><em>D</em>(<em>m</em><sub><em>n</em> + 1</sub>)</span>
+as <span class="math inline">$xm_{n+1} \sum_{i = 1}^n
+\frac{D(m_i)}{m_i}+ \frac{x'D(m_{n+1})}{m_{n+1}} = x' \sum_{i = 1}^n
+\frac{D(m_i)}{m_i} +x'\frac{D(m_{n+1})}{m_{n+1}}$</span>.</p>
+<p>We can then factor out the <span
+class="math inline"><em>x</em>′</span> and our final expression for
+<span class="math inline"><em>D</em>(<em>x</em>′)</span> is <span
+class="math inline">$x'\sum_{i = 1}^{n+1} \frac{D(m_i)}{m_i}$</span>
+which is exactly what we wanted to show <span
+class="math inline">∎</span></p>
+<p>With lemma <span class="math inline">1</span> in hand we can easily
+write down an expression for <span
+class="math inline"><em>D</em>(<em>x</em>)</span> in terms of its prime
+factors. Let <span class="math inline">$x = \prod_{i
+=1}^n{p_i}^{k_i}$</span> be <span
+class="math inline"><em>x</em></span>’s prime factorization.</p>
+<p><span class="math display">$$D(x) = x\sum_{i = 1}^{n}
+\frac{D({p_i}^{k_i})}{{p_i}^{k_i}}$$</span></p>
+<p>Obviously, <span
+class="math inline"><em>D</em>(<em>p</em><sup><em>k</em></sup>)</span>
+is <span
+class="math inline"><em>k</em><em>p</em><sup><em>k</em> − 1</sup></span>,
+since due to lemma <span class="math inline">1</span> <span
+class="math inline">$D(p^k) = p^k\sum_{i = 1}^n \frac{D(p)}{p}
+=p^k\sum_{i = 1}^n \frac{1}{p}$</span> and thus <span
+class="math inline">$D(p^k)  = \sum_{i = 1}^n p^{k-1} = k
+p^{k-1}$</span>.</p>
+<p>Finally, we have a fully simplified expression for the arithmetic
+derivative of <span class="math inline"><em>x</em></span>.</p>
+<p><span class="math display">$$D(x) = x\sum_{i = 1}^{n}
+\frac{D({p_i}^{k_i})}{{p_i}^{k_i}} = x\sum_{i = 1}^{n}
+\frac{{k_i}{p_i}^{k_i -1}}{{p_i}^{k_i}} = x\sum_{i = 1}^{n}
+\frac{k_i}{p_i}$$</span></p>
+<p>By using the notation <span
+class="math inline"><em>v</em><sub><em>p</em></sub>(<em>x</em>)</span>
+to denote the exponent of a prime <span
+class="math inline"><em>p</em></span> in the prime factorization of
+<span class="math inline"><em>x</em></span> the above formula can be
+rewritten as the following.</p>
+<p><span class="math display">$$D(x) = x\sum_{p \mid x}
+\frac{v_p(x)}{p}$$</span></p>
+<h1 class="unnumbered" id="upper-lower-bounds">Upper &amp; Lower
+Bounds</h1>
+
 
         
       
