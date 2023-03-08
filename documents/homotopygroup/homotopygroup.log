@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.21)  21 JAN 2023 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.21)  7 MAR 2023 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Problem Constellation .tex"
-(./Problem Constellation .tex
+**homotopygroup.tex
+(./homotopygroup.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/book.cls
@@ -787,8 +787,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [paper=a4,fontsize=paper,12.5pt].
 
-(./Problem Constellation .aux)
-\openout1 = `"Problem Constellation .aux"'.
+(./homotopygroup.aux)
+\openout1 = `homotopygroup.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
@@ -898,9 +898,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 50.
 LaTeX Info: Redefining \pageref on input line 50.
 LaTeX Info: Redefining \nameref on input line 50.
- (./Problem Constellation .out) (./Problem Constellation .out)
+ (./homotopygroup.out) (./homotopygroup.out)
 \@outlinefile=\write4
-\openout4 = `"Problem Constellation .out"'.
+\openout4 = `homotopygroup.out'.
 
 \c@lemma=\count314
 \c@sublemma=\count315
@@ -910,101 +910,101 @@ LaTeX Info: Redefining \nameref on input line 50.
 \c@problem=\count319
 \c@corollary=\count320
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 68.
+ne 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 68.
+e 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 68.
+ine 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 68.
+e 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 68.
+ne 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 68.
+e 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 68.
+e 66.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-LaTeX Font Info:    Font shape `T1/stix/m/sl' in size <10> not available
-(Font)              Font shape `T1/stix/m/it' tried instead on input line 142.
- [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-] [2] [3] [4]
-<./meth_pic//1.png, id=52, 358.33875pt x 136.51pt>
+<./meth_pic//1.png, id=7, 358.33875pt x 136.51pt>
 File: ./meth_pic//1.png Graphic file (type png)
 <use ./meth_pic//1.png>
-Package pdftex.def Info: ./meth_pic//1.png  used on input line 392.
+Package pdftex.def Info: ./meth_pic//1.png  used on input line 132.
 (pdftex.def)             Requested size: 128.0374pt x 48.77695pt.
+LaTeX Font Info:    Font shape `T1/stix/m/sl' in size <10> not available
+(Font)              Font shape `T1/stix/m/it' tried instead on input line 144.
+ [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-[5 <./meth_pic//1.png>]
-<./meth_pic//torus.png, id=64, 248.93pt x 154.5775pt>
+ <./meth_pic//1.png>]
+<./meth_pic//torus.png, id=29, 248.93pt x 154.5775pt>
 File: ./meth_pic//torus.png Graphic file (type png)
 <use ./meth_pic//torus.png>
-Package pdftex.def Info: ./meth_pic//torus.png  used on input line 414.
+Package pdftex.def Info: ./meth_pic//torus.png  used on input line 154.
 (pdftex.def)             Requested size: 128.0374pt x 79.50804pt.
- [6 <./meth_pic//torus.png>] [7]
-<./meth_pic//helix.png, id=80, 135.50626pt x 233.87375pt>
+[2 <./meth_pic//torus.png>] [3]
+<./meth_pic//helix.png, id=46, 135.50626pt x 233.87375pt>
 File: ./meth_pic//helix.png Graphic file (type png)
 <use ./meth_pic//helix.png>
-Package pdftex.def Info: ./meth_pic//helix.png  used on input line 556.
+Package pdftex.def Info: ./meth_pic//helix.png  used on input line 296.
 (pdftex.def)             Requested size: 71.13188pt x 122.77127pt.
- [8 <./meth_pic//helix.png>] [9] [10] [11] [12] [13] (./Problem Constellation .
-aux)
-Package rerunfilecheck Info: File `"Problem Constellation ".out' has not change
-d.
+ [4 <./meth_pic//helix.png>] [5] [6] [7]
+(./homotopygroup.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `homotopygroup.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24759 strings out of 478994
- 451333 string characters out of 5858183
- 712997 words of memory out of 5000000
- 41757 multiletter control sequences out of 15000+600000
- 440511 words of font info for 75 fonts, out of 8000000 for 9000
+ 24727 strings out of 478994
+ 450868 string characters out of 5858183
+ 712946 words of memory out of 5000000
+ 41755 multiletter control sequences out of 15000+600000
+ 435010 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,8n,98p,926b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,8n,98p,884b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/lo
 cal/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/
 local/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></
@@ -1012,17 +1012,16 @@ usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.p
 fb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathbb.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathfrak.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/stix/stix-mathtt.pfb>
-Output written on "Problem Constellation .pdf" (13 pages, 453561 bytes).
+/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathtt.pfb>
+Output written on homotopygroup.pdf (7 pages, 412082 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
