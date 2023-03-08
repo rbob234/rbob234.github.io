@@ -10,6 +10,160 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Arithmetic Derivative </title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
 
   <meta name="viewport"content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible"content="ie=edge">
@@ -17,6 +171,13 @@
   <link rel="shortcut icon"href="../assets/rose.ico"type="image/x-icon">
   <link rel="preload"href="../styles/post.css"as="style">
   <link rel="stylesheet"href="../styles/post.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
   <header id="top-container"role="navigation">
@@ -48,8 +209,101 @@
         03/06/2023
       </time>
       <section id="post-content-container">
-
-          <img src="/Users/rishabbomma/Documents/GitHub/rishabbomma.github.io/_images/1.jpg"> </img>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#basic-results" id="toc-basic-results">Basic
+Results</a></li>
+<li><a href="#upper-lower-bounds" id="toc-upper-lower-bounds">Upper
+&amp; Lower Bounds</a></li>
+</ul>
+</nav>
+<h1 class="unnumbered" id="basic-results">Basic Results</h1>
+<div class="definition">
+<p><strong>Definition 1</strong>. <em>The arithmetic derivative, <span
+class="math inline">\(D\)</span>, is defined recursively in the
+following manner for all natural numbers <span class="math inline">\(n
+\in \mathbb{N}\)</span></em></p>
+<ol type="1">
+<li><p><em><span class="math inline">\(D(1) = D(0) =
+0\)</span></em></p></li>
+<li><p><em><span class="math inline">\(D(p) = 1\)</span> for any prime
+<span class="math inline">\(p\)</span></em></p></li>
+<li><p><em>For every pair of natural numbers <span
+class="math inline">\(n\)</span> &amp; <span
+class="math inline">\(m\)</span>, <span class="math inline">\(D(mn) =
+mD(n) + nD(m)\)</span></em></p></li>
+</ol>
+</div>
+<p>The arithmetic derivative is much like the normal derivative operator
+if one sees the numbers <span class="math inline">\(0\)</span>
+&amp; <span class="math inline">\(1\)</span> as the "constant"
+functions, prime numbers as "lines" with slope <span
+class="math inline">\(1\)</span> and if one required the arithmetic
+derivative to satisfy the Lebiniz rule.</p>
+<p>Since this definition doesn’t allow one to directly compute the
+derivative of a number quickly, the following lemma shall help us
+greatly.</p>
+<div class="lemma">
+<p><strong>Lemma 1</strong>. <em>If <span class="math display">\[x =
+\prod_{i =1 }^n m_i\]</span> then <span class="math display">\[D(x) =
+x\sum_{i = 1}^n \frac{D(m_i)}{m_i}\]</span></em></p>
+</div>
+<p><em>Proof:</em></p>
+<p>We shall proceed by induction on the amount of elements in the
+product expansion of <span class="math inline">\(x\)</span>. If <span
+class="math inline">\(n = 1\)</span> then <span class="math inline">\(x
+= m_1\)</span> and thus <span class="math display">\[x\sum_{i = 1}^n
+\frac{D(m_i)}{m_i} = (m_1)\frac{D(m_1)}{m_1} = D(m_1) =
+D(x)\]</span></p>
+<p>Now let’s assume that for any <span class="math inline">\(x\)</span>
+with <span class="math inline">\(n\)</span> factors in its product
+expansion the formula <span class="math display">\[D(x) = x\sum_{i =
+1}^n \frac{D(m_i)}{m_i}\]</span> applies. Let <span
+class="math inline">\(x&#39;\)</span> be equal to <span
+class="math inline">\(xm_{n+1}\)</span> and thus <span
+class="math inline">\(D(x&#39;) = D(x)m_{n+1} +xD(m_{n+1})\)</span>. We
+can rewrite <span class="math inline">\(D(x)m_{n+1}
++xD(m_{n+1})\)</span> as <span class="math display">\[xm_{n+1} \sum_{i =
+1}^n \frac{D(m_i)}{m_i}+ \frac{x&#39;D(m_{n+1})}{m_{n+1}} = x&#39;
+\sum_{i = 1}^n \frac{D(m_i)}{m_i}
++x&#39;\frac{D(m_{n+1})}{m_{n+1}}\]</span>.</p>
+<p>We can then factor out the <span
+class="math inline">\(x&#39;\)</span> and our final expression for <span
+class="math inline">\(D(x&#39;)\)</span> is <span
+class="math inline">\(x&#39;\sum_{i = 1}^{n+1}
+\frac{D(m_i)}{m_i}\)</span> which is exactly what we wanted to show
+∎</p>
+<p>With lemma <span class="math inline">\(1\)</span> in hand we can
+easily write down an expression for <span
+class="math inline">\(D(x)\)</span> in terms of its prime factors.Let
+<span class="math display">\[ x = \prod_{i =1}^n{p_i}^{k_i}\]</span> be
+<span class="math inline">\(x\)</span>’s prime factorization.</p>
+<p><span class="math display">\[D(x) = x\sum_{i = 1}^{n}
+\frac{D({p_i}^{k_i})}{{p_i}^{k_i}}\]</span></p>
+<p>Obviously, <span class="math inline">\(D(p^k)\)</span> is <span
+class="math inline">\(kp^{k-1}\)</span>, since due to lemma <span
+class="math inline">\(1\)</span> we have <span
+class="math display">\[D(p^k) = p^k\sum_{i = 1}^n \frac{D(p)}{p}
+=p^k\sum_{i = 1}^n \frac{1}{p}\]</span> and thus <span
+class="math display">\[D(p^k)  = \sum_{i = 1}^n p^{k-1} = k
+p^{k-1}\]</span></p>
+<p>Finally, we have a fully simplified expression for the arithmetic
+derivative of <span class="math inline">\(x\)</span>.</p>
+<p><span class="math display">\[D(x) = x\sum_{i = 1}^{n}
+\frac{D({p_i}^{k_i})}{{p_i}^{k_i}} = x\sum_{i = 1}^{n}
+\frac{{k_i}{p_i}^{k_i -1}}{{p_i}^{k_i}} = x\sum_{i = 1}^{n}
+\frac{k_i}{p_i}\]</span></p>
+<p>By using the notation <span class="math inline">\(v_p(x)\)</span> to
+denote the exponent of a prime <span class="math inline">\(p\)</span> in
+the prime factorization of <span class="math inline">\(x\)</span> the
+above formula can be rewritten as the following.</p>
+<p><span class="math display">\[D(x) = x\sum_{p \mid x}
+\frac{v_p(x)}{p}\]</span></p>
+<h1 class="unnumbered" id="upper-lower-bounds">Upper &amp; Lower
+Bounds</h1>
+</body>
+          
 
           
         
