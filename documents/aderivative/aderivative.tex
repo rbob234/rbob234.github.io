@@ -167,6 +167,40 @@ By using the notation $v_p(x)$ to denote the exponent of a prime $p$ in the prim
 
 \[D(x) = x\sum_{p \mid x} \frac{v_p(x)}{p}\]
 
+\section*{Cool Results}
+
+\subsection*{Differential Equations} 
+
+\3
+
+Let $x'$ be shorthand for $D(x)$ and of course $x''$ will be $D(D(x))$ and so on.
+
+\3
+
+In calculus, the most basic differential equation is $x' = 0$ and the solutions of such an equation are the constant functions, so we would expect the same to be true in this context, and it indeed is.
+
+\begin{theorem}
+
+If $x' = 0$ then $x \in \{0,1\}$
+
+
+\end{theorem}
+
+\Proof 
+
+By our definition of $D(x)$, $0'$ and $1'$ are both $0$. Now let $x>1$ and $x'$ is equal to $x\sum_{p \mid x} \frac{v_p(x)}{p}$. The only way it can be $0$ is if $\sum_{p \mid x} \frac{v_p(x)}{p}$ is $0$ and that's only true if and only $v_p(x)$ is $0$ for all $p \mid x$ which is obviously false and thus $x'$ is never $0$ if $x>1$ $\QED$
+
+\3
+
+Another simple differential equation is $x' = 1$ which characterizes all linear functions with slope $1$. Similarly, in this context we should see that if $x'$ is $1$ then $x$ is a prime number.
+
+\begin{theorem}
+
+If $x' = 1$ then $x$ is prime 
+
+
+\end{theorem}
+
 
 
 
