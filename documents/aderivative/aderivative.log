@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.21)  22 MAR 2023 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.21)  25 MAR 2023 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -967,9 +967,9 @@ Package rerunfilecheck Info: File `aderivative.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24052 strings out of 478994
- 413744 string characters out of 5858183
- 685265 words of memory out of 5000000
+ 24053 strings out of 478994
+ 413760 string characters out of 5858183
+ 687170 words of memory out of 5000000
  41111 multiletter control sequences out of 15000+600000
  448784 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -983,11 +983,12 @@ fb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathbb.pfb>
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr
 /local/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/lo
 cal/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathtt.pfb>
-Output written on aderivative.pdf (3 pages, 148535 bytes).
+/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathtt.pfb>
+Output written on aderivative.pdf (3 pages, 153454 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
