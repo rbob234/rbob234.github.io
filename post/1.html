@@ -12,7 +12,25 @@
   <link rel="preload"href="../styles/post.css"as="style">
   <link rel="stylesheet"href="../styles/post.css">
 </head>
-<body>
+<style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden
+        }
+ 
+        
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+ 
+            
+            height: 100vh;
+        }
+ 
+       
+        
+</style>
+
   <header id="top-container"role="navigation">
     <nav>
   <a class="logo-link"href="/">
@@ -26,9 +44,10 @@
     <a id="misc"class="info-link"href="/misc.html">Misc</a>
   </small>
 </nav>
+</header>
 
-  </header>
-  <main id="main-container">
+<div class="container">
+<main id="main-container">
     <post id="post-container">
       <h1 id="post-title">
         Anarchism 
@@ -65,3 +84,5 @@
       </section>
     </post>
   </main>
+  <br><br><br><br><br><br><br>
+   </div>

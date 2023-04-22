@@ -11,6 +11,24 @@
   <link rel="preload"href="./styles/posts.css"as="style">
   <link rel="stylesheet"href="./styles/posts.css">
 </head>
+<style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden
+        }
+ 
+        
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+ 
+            
+            height: 100vh;
+        }
+ 
+       
+        
+</style>
 <body>
   <header id="top-container"role="navigation">
     <nav>
@@ -28,6 +46,7 @@
 
   </header>
   <main id="main-container">
+    <div class="container">
     <section id="posts-container">
         
           <li class="posts-list-item">
@@ -131,6 +150,13 @@
           
 
         </section>
+
+        <br><br><br><br>
+
+
+
+
+      </div>
         
   </main>
 
